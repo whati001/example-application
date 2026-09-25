@@ -92,6 +92,13 @@ command:
 west build -b $BOARD -S debugging app
 ```
 
+The sample also contains a logging configuration fragment in the `app` folder.
+To apply it, run the following command:
+
+```shell
+west build -b $BOARD app -- -DEXTRA_CONF_FILE=logging.conf
+```
+
 Once you have built the application, run the following command to flash it:
 
 ```shell
